@@ -120,4 +120,9 @@ class DB
         }
         return $query;
     }
+
+    public function getLastInsertId()
+    {
+        return $this->getConnection()->lastInsertId();
+    }
 }
